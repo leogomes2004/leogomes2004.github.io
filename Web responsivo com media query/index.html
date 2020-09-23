@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Web responsivo com media query</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<!---Web responsivo com media query-->
+
+<link rel="stylesheet" href="print.css" type="text/css" media="print">
+@media print {
+    /* Aqui vai as declarações desejadas */
+  }
+
+  /* Estilos aplicados a larguras acima de 480 pixels */
+
+body {
+       background-color: #fff;
+}
+
+/* Estilos aplicados a larguras até 480 pixels */
+
+@media screen and (max-width: 480px) {
+      body {
+             background-color: #ff0;
+       }
+}
+
+/* Telefones em paisagem e abaixo */
+@media (max-width: 480px) { 
+     /* estilos aqui */
+ }
+
+/* Telefones em paisagem a tablet em retrato */
+@media (max-width: 767px) {
+     /* estilos aqui */
+}
+
+/* Tablet em retrato a paisagem e desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+     /* estilos aqui */
+}
+
+/* Desktop grande */
+@media (min-width: 1200px) {
+    /* estilos aqui */
+}
+
